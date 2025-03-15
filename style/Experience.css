@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: rgb(239, 239, 239);
+}
+
+
+.header {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    background-color:black;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 10;
+
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.menu ul li {
+    margin: 0 15px;
+    
+}
+
+.menu ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover {
+    background-color: #BDC3C7;
+    color: #007BFF;
+}
+
+.menu .ensemble {
+    font-size: 1rem;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    margin-right: flex;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+h2 {
+    color: #1a237e;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.experience {
+    border-left: 4px solid #1a237e;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+.experience-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0d47a1;
+}
+.experience-date {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.experience-description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+.hero-section {
+    position: relative; /* Ajouté pour que ::before fonctionne bien */
+    background: url('../Assets/image/') center/cover no-repeat;
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1; /* Ajoute un z-index pour s'assurer que l'overlay est sous le texte */
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+    z-index: 2;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: center;
+    
+}
+
+.hero-content h1 { 
+    font-size: 2.5rem;
+    padding-bottom: 2rem; 
+    line-height: 1.2;
+}
+
+.image-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 20px; 
+    gap: 20px; 
+}
+
+.picture, .picture2 {
+    width: 45%; /* Ajuste la largeur des images */
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+.contenu {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #000000;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.contenu h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contenu p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.conclusion-section {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px; /* Espacement entre le texte et l'animation */
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Animation de flottement */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.animated-icon {
+    width: 80px; /* Ajuste la taille */
+    height: auto;
+    animation: floating 2s infinite ease-in-out;
+}
+
+
+.content-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+    background-color: #ffffff; 
+    color: #000000;
+}
+
+.cv-container {
+    flex: 1;
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #0056b3;
+}
+.overlays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Pour que l'overlay soit au-dessus du contenu */
+}
+
+.content-footer p {
+    flex: 1;
+    text-align: center;
+}
+
+.content-footer p:last-child {
+    text-align: right; /* Aligne l'email à droite */
+}
+
