@@ -74,7 +74,6 @@ body {
     margin-right: flex;
     font-size: 15px;
 }
-
 .burger {
     display: none;
 }
@@ -82,18 +81,148 @@ body {
    display: block !important;
 }
 
+
 .veille {
     text-align: center;
     padding: 50px 20px;
 }
 
 .banniere {
-    background: url('../Assets/image/veille-tech.jpg') no-repeat center/cover;
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajuste selon besoin */
+    background: url('/Assets/image/DALL·E 2025-03-25 18.24.33 - A futuristic digital workspace illustrating technological monitoring (veille technologique). The scene features a person analyzing data on a high-tech.webp') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.banniere::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Overlay noir semi-transparent */
+}
+
+/* Bannière avec overlay */
+.banniere {
+    position: relative;
+    text-align: center;
     padding: 100px 20px;
     color: white;
     font-size: 2rem;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.banniere img {
+    width: 100%;
+    height: 300px; /* Ajustable selon tes besoins */
+    object-fit: cover;
+    filter: brightness(50%); /* Assombrit l'image pour mieux lire le texte */
+}
+
+.banniere h2, .banniere p {
+    position: absolute;
+    z-index: 2;
+}
+
+.banniere h2 {
+    top: 40%;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.banniere p {
+    top: 60%;
+    font-size: 1.2rem;
+}
+
+/* Style pour la définition */
+.definition {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background: #fff3cd;
+    border-left: 5px solid #ffcc00;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.definition h3 {
+    color: #d35400;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.definition p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Section veille technologique */
+.veille-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Design des tendances */
+.trend {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.trend:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icônes */
+.trend h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.trend p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .banniere h2 {
+        font-size: 2rem;
+    }
+
+    .banniere p {
+        font-size: 1rem;
+    }
+
+    .veille-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 .veille-content {
     display: flex;
@@ -225,11 +354,11 @@ body {
     .menu ul{
         display: none;
     }
+   
     
-
-    .content-footer{
-        flex-direction: column;
-    }
+    
 }
+
+
 
 
