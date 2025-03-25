@@ -6,38 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Oumou Diallo</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
-
+    
 </head>
 
 <body>
-    <header class="header">
-        <nav class="menu">
-            <div class="ensemble">
-                <img src="Assets/icone/user.png" alt="Icône">
-                <h1>Oumou DIALLO</h1>
-            </div>
-            <div class="burger">Menu burger</div>
 
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="Core/competence.html">Compétences</a></li>
-                <li><a href="Core/Experience.html">Expérience</a></li>
-                <li><a href="Core/Projet_Academic.html">Projet Académique</a></li>
-                <li><a href="Core/veille_technologique.html">Veille Technologique</a></li>
-            </ul>
-        </nav>
-
-        <div class="banniere">
-            <img src="Assets/image/R.jpg" alt="Image de la bannière">
-            <div class="overlay"></div> 
-            <div class="hero">
-                <h1>Bienvenue sur mon Portfolio</h1>
-                <p>Découvrez mon parcours, mes compétences et mes projets</p>
-            </div>
+    <nav class="menu">
+        <div class="ensemble">
+            <img src="Assets/icone/user.png" alt="Icône">
+            <h1>Oumou DIALLO</h1>
         </div>
-    </header>
+        <button class="burger">☰</button>
 
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="Core/competence.html">Compétences</a></li>
+            <li><a href="Core/Experience.html">Expérience</a></li>
+            <li><a href="Core/Projet_Academic.html">Projet Académique</a></li>
+            <li><a href="Core/veille_technologique.html">Veille Technologique</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="banniere">
+        <img src="Assets/image/R.jpg" alt="Image de la bannière">
+         <div class="overlay"></div> 
+        <div class="hero">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Découvrez mon parcours, mes compétences et mes projets</p>
+        </div> 
+    </div>
     <main>
         <h2>À propos</h2>
 <div class="content-para-image">
@@ -64,7 +62,7 @@
     <section class="filiere">
         <h2>Présentation du domaine SIO</h2>
         <div class="filiere-container">
-            <img src="Assets/image/bts.jpg" alt="BTS SIO SLAM" class="filiere-image">
+            <!-- <img src="Assets/image/bts.jpg" alt="BTS SIO SLAM" class="filiere-image"> -->
             <div class="filiere-text">
                 <p>
                     Le <strong>BTS SIO (Service Informatiques aux Organisations)</strong> est une formation spécialisée dans l’informatique, offrant deux parcours :
@@ -84,13 +82,17 @@
     
 
     <footer class="content-footer">
-        <div class="cv-container">
-            <a href="../Assets/CV Oumou DIALLO 2025.pdf" class="cv-button" download>Télécharger mon CV</a>
-        </div>
-        <div class="overlay"></div> 
+        <a href="../Assets/CV Oumou DIALLO 2025.pdf" class="cv-button" target="_blank">Voir mon CV</a>
         <p>&copy; 2024 Diallo Oumou. Tous droits réservés.</p>
         <p><a href="mailto:oumoudiallo7540@gmail.com">oumoudiallo7540@gmail.com</a></p>
     </footer>
+
+
+
+    <script src="app.js"></script>
+
+   
+
     
 </body>
 
