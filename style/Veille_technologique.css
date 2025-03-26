@@ -91,7 +91,7 @@ body {
     position: relative;
     width: 100%;
     height: 400px; /* Ajuste selon besoin */
-    background: url('/Assets/image/DALL·E 2025-03-25 18.24.33 - A futuristic digital workspace illustrating technological monitoring (veille technologique). The scene features a person analyzing data on a high-tech.webp') no-repeat center/cover;
+    background: url('/Assets/image/veille.webp') no-repeat center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +126,7 @@ body {
 
 .banniere img {
     width: 100%;
-    height: 300px; /* Ajustable selon tes besoins */
+    height: 300px;
     object-fit: cover;
     filter: brightness(50%); /* Assombrit l'image pour mieux lire le texte */
 }
